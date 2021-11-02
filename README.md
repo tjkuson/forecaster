@@ -43,7 +43,7 @@ A simple interactive example:
     
 ## Authors and acknowledgement
 
-With thanks to the original authors (Chen & Kipping) and their paper "Probabilistic Forecasting of the Masses and Radii of Other Worlds".
+With thanks to the original authors (Chen & Kipping) and their paper “Probabilistic Forecasting of the Masses and Radii of Other Worlds”.
 
 See arXiv:1603.08614 for details.
 
