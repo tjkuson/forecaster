@@ -1,5 +1,4 @@
-forecaster
-==========
+# forecaster
 
 Forecaster uses a probabilistic mass-radius relation as the underlying model.
 
@@ -11,10 +10,9 @@ See arXiv:1603.08614 for details.
 
 If you use it, please cite it.
 
+Forecaster has been modified to run on Python 3.8.
 
-
-Usage
------
+## Usage
 
 Check demo.ipynb for more details.
 
@@ -30,18 +28,24 @@ A simple example:
 
 A simple interactive example:
     
-    print '=== Forecaster ==='
-    print ' '
-    print 'Example: Radius-to-Mass Conversion (without posteriors)'
-    print ' '
-    print 'Radius = A +/- B [Earth units]'
+    print('=== Forecaster ===')
+    print(' ')
+    print('Example: Radius-to-Mass Conversion (without posteriors)')
+    print(' ')
+    print('Radius = A +/- B [Earth units]')
     mean = float(raw_input("Enter A: "))
     std = float(raw_input("Enter B: "))
 
     # predict the mean and std of radius given mass measurements
     Mmedian, Mplus, Mminus = mr.Rstat2M(mean, std, unit='Earth', sample_size=1e3, grid_size=1e3)
-    print ' '
-    print 'Mass = ',Mmedian,'+',Mplus,'-',Mminus,' M_earth'
+    print(' ')
+    print('Mass = ',Mmedian,'+',Mplus,'-',Mminus,' M_earth')
+    
+## Authors and acknowledgement
 
+With thanks to the original authors (Chen & Kipping) and their paper "Probabilistic Forecasting of the Masses and Radii of Other Worlds".
 
+See arXiv:1603.08614 for details.
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
